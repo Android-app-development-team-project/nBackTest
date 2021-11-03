@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PracticeGameSettingActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N Back Test"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/StartPracticeGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStartPractice"
+        android:text="연습 게임 시작!"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/nLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nMinusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickNMinusBtn"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/nText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N = 2" />
+
+        <Button
+            android:id="@+id/nPlusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickNPlusBtn"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lengthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lengthMinusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickLengthMinusBtn"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/lengthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="문제 길이 = 10" />
+
+        <Button
+            android:id="@+id/lengthPlusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickLengthPlusBtn"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dTimeMinusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickDTimeMinusBtn"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/dTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="한 문제당 시간 = 1초" />
+
+        <Button
+            android:id="@+id/dTimePlusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickDTimePlusBtn"
+            android:text="+" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/parallelSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="onClickSwitch"
+        android:text="병렬 처리 ON/OFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBackBtn"
+        android:text="뒤로가기"
+        android:textSize="24sp" />
+
+</LinearLayout>
